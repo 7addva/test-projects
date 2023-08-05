@@ -1,6 +1,5 @@
 /.vscode
 /html
-/test.go
-/test.js
-/test.ts
 /testLangs
+/nullPointerTest.cpp
+!spec/*.exe

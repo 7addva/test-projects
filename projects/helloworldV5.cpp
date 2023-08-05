@@ -4,12 +4,23 @@
 using namespace std;
 
 int main() {
-    string names[2+1] = {"me", "you", "us"};
-    names[0] = "he";
-    cout << names[0] + "\n";
-    //array output uses indexing => STARTS AT 0
+    int numbers[] = {60, 69, 42};
+    cout << numbers[0] + "\n";
 
-    for (int i = 0; i < 4; i++){
-        cout << names[i] << "\n";
+    //?numbers[1] = 24;
+    //cout << numbers[1] << "\n";
+
+    //? if (numbers[1] = 69) {
+    //     cout << "Nice" << "\n";
+    // } else {
+    //     cout << "Not nice" << "\n";
+    // };
+    
+    for (int i : numbers){ //foreach loop
+        cout << i << "\t";
     };
+    
+    cout << "\n" << "The size of the 'numbers' array is: " << sizeof(numbers) / sizeof(int) << "\n";
+
+    //! sizeof returns size of type in BYTES -> divide by sizeof(*DATA TYPE*)
 };
