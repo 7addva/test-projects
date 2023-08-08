@@ -10,6 +10,7 @@ int main() {
         {0,0,0,0},
         {0,0,0,0}
     };
+//ADD SIZE SELECTION FUNCTIONALITY
 
     int row1, column1, row2, row3, row4, column2, column3, column4;
     cout << "ASSIGNER: choose location of 4 ships \n";
