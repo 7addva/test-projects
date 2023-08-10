@@ -10,21 +10,25 @@ int main() {
         {0,0,0,0},
         {0,0,0,0}
     };
-//ADD SIZE SELECTION FUNCTIONALITY
+//ADD SIZE SELECTION FUNCTIONALITY (future)
 
-    int row1, column1, row2, row3, row4, column2, column3, column4;
+    int row1 = 0;
+    int row2 = 0;
+    int row3, row4 = 0;
+    int column1, column2, column3, column4 = 0;
     cout << "ASSIGNER: choose location of 4 ships \n";
 //-----------------------------------------------------------------------
     cout << "Choose a number between 1 and 4 representing a row (1/4)\n";
     cin >> row1;
     if(row1 == 55){
-        cout << "DEBUG ENABLED \n";
-        cout << "ALL SHIPS ON ROW 1 \n\n";
-        
         playerA[0][0] = 1;
         playerA[0][1] = 1;
         playerA[0][2] = 1;
         playerA[0][3] = 1;
+        
+        cout << "DEBUG ENABLED \n";
+        cout << "ALL SHIPS ON ROW 1 \n\n";
+        
     } else {
         row1 - 1;
 
@@ -58,11 +62,13 @@ int main() {
         cin >> row4;
         row4 - 1;
 
-        cout << "Choose a number between 1 and 4 representing a column (4/4)\n\n\n\n\n\n";
+        cout << "Choose a number between 1 and 4 representing a column (4/4)\n";
         cin >> column4;
         column4 - 1;
 
         playerA[row4][column4] = 1;
+
+        // cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
     };
 
     int hits = 0;
