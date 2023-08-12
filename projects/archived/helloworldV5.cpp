@@ -20,7 +20,7 @@ int main() {
         cout << i << "\t";
     };
     
-    cout << "\n" << "The size of the 'numbers' array is: " << sizeof(numbers) / sizeof(int) << "\n";
+    cout << "\n" << "The size of the 'numbers' array is: " << sizeof(numbers)  / sizeof(int) << "\n";
 
     //! sizeof returns size of type in BYTES -> divide by sizeof(*DATA TYPE*)
 };
